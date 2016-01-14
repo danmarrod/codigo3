@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>es.egc</groupId>
-  <artifactId>ex3</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>28790209M</artifactId>
+  <version>6.0.FINAL</version>
   <packaging>jar</packaging>
 
   <name>ex3</name>
@@ -21,6 +21,27 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>2.19.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
+  
+  <build>
+   <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.19.1</version>
+			<configuration>
+			  <includes>
+          <include>**/*.java</include>
+        </includes>
+		  </configuration>
+		</plugin>
+	 </plugins>
+  </build>
 
 </project>
